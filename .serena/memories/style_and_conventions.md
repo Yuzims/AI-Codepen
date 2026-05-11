@@ -1,0 +1,1 @@
+代码风格以 TypeScript/React 函数组件和 hooks 为主，前端样式主要使用 Emotion styled components；服务层集中在 `src/services`，页面在 `src/pages`，组件在 `src/components`。后端采用 Express 路由拆分模式，认证中间件位于 `src/middleware/auth.js`，资源路由位于 `src/routes`。接口错误通常返回 `{ message }` JSON。

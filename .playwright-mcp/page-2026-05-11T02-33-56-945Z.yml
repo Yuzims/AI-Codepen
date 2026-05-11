@@ -1,0 +1,7 @@
+- generic [ref=e19]:
+  - heading "登录" [level=1] [ref=e20]
+  - textbox "邮箱" [ref=e21]
+  - textbox "密码" [ref=e22]
+  - button "登录" [ref=e23] [cursor=pointer]
+  - link "还没有账号？立即注册" [ref=e24] [cursor=pointer]:
+    - /url: /register

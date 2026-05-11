@@ -1,0 +1,395 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "星空·AI" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+        - text: 星空·AI
+      - generic [ref=e8]:
+        - link "快速接入" [ref=e9] [cursor=pointer]:
+          - /url: "#quickstart"
+        - link "教程文档" [ref=e10] [cursor=pointer]:
+          - /url: "#docs"
+      - link "获取 API Key" [ref=e11] [cursor=pointer]:
+        - /url: https://www.yuesecoding.top/console
+  - generic [ref=e12]:
+    - generic [ref=e13]: 支持 Opus 4.6 / GPT-5.3 / Cherry Studio
+    - heading "三步接入，即刻起飞" [level=1] [ref=e15]
+    - paragraph [ref=e16]: 选择您常用的 AI 编程助手，快速完成配置。一个 API Key 畅享所有大模型。
+  - generic [ref=e17]:
+    - generic [ref=e19]:
+      - text: 👇 这里是快速配置概览，
+      - link "点击查看下方详细教程" [ref=e20] [cursor=pointer]:
+        - /url: "#docs"
+      - text: 获取完整的图文步骤说明
+    - generic [ref=e21]:
+      - button "Claude Code" [ref=e22] [cursor=pointer]
+      - button "Roo Code" [ref=e23] [cursor=pointer]
+      - button "OpenCode" [ref=e24] [cursor=pointer]
+      - button "CodeX" [ref=e25] [cursor=pointer]
+      - button "OpenClaw" [ref=e26] [cursor=pointer]
+      - button "Cherry Studio" [ref=e27] [cursor=pointer]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: "1"
+          - generic [ref=e32]:
+            - heading "前提条件：安装 Claude Code CLI" [level=4] [ref=e33]
+            - paragraph [ref=e34]:
+              - text: 先安装
+              - link "Node.js 18+" [ref=e35] [cursor=pointer]:
+                - /url: https://nodejs.org/
+              - text: （
+              - strong [ref=e36]: Windows 用户
+              - text: 还需安装
+              - link "Git for Windows" [ref=e37] [cursor=pointer]:
+                - /url: https://git-scm.com/downloads/win
+              - text: ），然后在终端运行：
+              - code [ref=e38]: npm install -g @anthropic-ai/claude-code
+        - generic [ref=e39]:
+          - generic [ref=e40]: "2"
+          - generic [ref=e41]:
+            - heading "修改配置文件" [level=4] [ref=e42]
+            - paragraph [ref=e43]:
+              - text: 找到或创建
+              - code [ref=e44]: ~/.claude/settings.json
+              - text: ，将右侧的配置内容复制到文件中，替换您的 API Key。
+        - generic [ref=e45]:
+          - generic [ref=e46]: "3"
+          - generic [ref=e47]:
+            - heading "启动使用" [level=4] [ref=e48]
+            - paragraph [ref=e49]:
+              - text: 在终端中输入
+              - code [ref=e50]: claude
+              - text: 即可启动，享受 AI 编程加速体验。
+        - generic [ref=e51]:
+          - generic [ref=e52]: 🚀 嫌麻烦？一键配置
+          - paragraph [ref=e53]:
+            - text: 先按照上方步骤安装好 Node.js、Git 和 Claude Code CLI 后，运行
+            - code [ref=e54]: npx xingkong-ai
+            - text: 即可一键完成配置。
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e61]: settings.json
+          - button "复制" [ref=e62] [cursor=pointer]
+        - generic [ref=e63]: "# Step 1: 安装 npm install -g @anthropic-ai/claude-code # Step 2: 配置 ~/.claude/settings.json { \"env\": { \"ANTHROPIC_AUTH_TOKEN\": \"sk-your-api-key\", \"ANTHROPIC_BASE_URL\": \"https://www.yuesecoding.top\", \"CLAUDE_CODE_MAX_OUTPUT_TOKENS\": \"64000\", \"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC\": \"1\" }, \"permissions\": { \"allow\": [], \"deny\": [] }, \"alwaysThinkingEnabled\": false } # Step 3: 配置 ~/.claude.json { \"hasCompletedOnboarding\": true } # Step 4: 启动 claude"
+  - generic [ref=e65]:
+    - complementary [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]: 教程文档
+        - navigation [ref=e69]:
+          - button "C Claude Code 教程" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: C
+            - text: Claude Code 教程
+          - generic [ref=e72]:
+            - link "什么是 Claude Code" [ref=e73] [cursor=pointer]:
+              - /url: "#"
+            - link "效率对比" [ref=e74] [cursor=pointer]:
+              - /url: "#"
+            - link "环境要求" [ref=e75] [cursor=pointer]:
+              - /url: "#"
+            - link "安装步骤" [ref=e76] [cursor=pointer]:
+              - /url: "#"
+            - link "API 配置" [ref=e77] [cursor=pointer]:
+              - /url: "#"
+            - link "基本使用" [ref=e78] [cursor=pointer]:
+              - /url: "#"
+            - link "常用命令" [ref=e79] [cursor=pointer]:
+              - /url: "#"
+            - link "MCP 协议" [ref=e80] [cursor=pointer]:
+              - /url: "#"
+            - link "高级技巧" [ref=e81] [cursor=pointer]:
+              - /url: "#"
+            - link "VS Code 插件" [ref=e82] [cursor=pointer]:
+              - /url: "#"
+            - link "使用心得" [ref=e83] [cursor=pointer]:
+              - /url: "#"
+            - link "参考链接" [ref=e84] [cursor=pointer]:
+              - /url: "#"
+          - button "R Roo Code 教程" [ref=e85] [cursor=pointer]:
+            - generic [ref=e86]: R
+            - text: Roo Code 教程
+          - button "O OpenCode 教程" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]: O
+            - text: OpenCode 教程
+          - button "X CodeX 教程" [ref=e89] [cursor=pointer]:
+            - generic [ref=e90]: X
+            - text: CodeX 教程
+          - button "L OpenClaw 教程" [ref=e91] [cursor=pointer]:
+            - generic [ref=e92]: L
+            - text: OpenClaw 教程
+          - button "S Cherry Studio 教程" [ref=e93] [cursor=pointer]:
+            - generic [ref=e94]: S
+            - text: Cherry Studio 教程
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - heading "Claude Code 教程" [level=1] [ref=e97]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - img [ref=e100]
+            - text: 阅读约 10 分钟
+          - generic [ref=e103]:
+            - img [ref=e104]
+            - text: 2025 年更新
+        - heading "#什么是 Claude Code？" [level=2] [ref=e107]
+        - paragraph [ref=e108]: Claude Code 是 Anthropic 推出的现代开发者 AI 编程助手，通过集成 AI 能力，可大幅提升开发效率。它直接在终端中运行，能够理解你的整个代码库，通过自然语言命令帮助你更快地编码。
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - heading "智能代码理解" [level=4] [ref=e111]
+            - paragraph [ref=e112]: 深度理解项目结构、依赖关系和代码逻辑
+          - generic [ref=e113]:
+            - heading "自然语言交互" [level=4] [ref=e114]
+            - paragraph [ref=e115]: 用中文或英文描述需求，AI 自动生成代码
+          - generic [ref=e116]:
+            - heading "终端原生体验" [level=4] [ref=e117]
+            - paragraph [ref=e118]: 无需离开终端，直接在命令行中完成所有操作
+          - generic [ref=e119]:
+            - heading "多文件编辑" [level=4] [ref=e120]
+            - paragraph [ref=e121]: 一次对话中可同时修改多个文件，保持一致性
+        - heading "#效率对比" [level=2] [ref=e122]
+        - table [ref=e123]:
+          - rowgroup [ref=e124]:
+            - row "场景 传统开发 AI 辅助 (Claude Code)" [ref=e125]:
+              - columnheader "场景" [ref=e126]
+              - columnheader "传统开发" [ref=e127]
+              - columnheader "AI 辅助 (Claude Code)" [ref=e128]
+          - rowgroup [ref=e129]:
+            - row "研究文档 + 编写后端 + 开发前端 + 调试 约 2.5 小时 约 15 分钟" [ref=e130]:
+              - cell "研究文档 + 编写后端 + 开发前端 + 调试" [ref=e131]
+              - cell "约 2.5 小时" [ref=e132]
+              - cell "约 15 分钟" [ref=e133]
+            - row "手动查找 Bug 并修复 反复调试样式和逻辑 自动分析代码，智能建议修复方案" [ref=e134]:
+              - cell "手动查找 Bug 并修复" [ref=e135]
+              - cell "反复调试样式和逻辑" [ref=e136]
+              - cell "自动分析代码，智能建议修复方案" [ref=e137]
+            - row "手动逐个修改文件 容易遗漏关联文件 一次对话同时修改多个文件，保持一致性" [ref=e138]:
+              - cell "手动逐个修改文件" [ref=e139]
+              - cell "容易遗漏关联文件" [ref=e140]
+              - cell "一次对话同时修改多个文件，保持一致性" [ref=e141]
+        - heading "#支持环境与系统要求" [level=2] [ref=e142]
+        - heading "支持平台" [level=3] [ref=e143]
+        - list [ref=e144]:
+          - listitem [ref=e145]: macOS 12+（推荐）
+          - listitem [ref=e146]: Ubuntu 20.04+ / Debian 11+
+          - listitem [ref=e147]:
+            - text: Windows（需额外安装
+            - link "Git for Windows" [ref=e148] [cursor=pointer]:
+              - /url: https://git-scm.com/downloads/win
+            - text: ）
+        - heading "系统要求" [level=3] [ref=e149]
+        - list [ref=e150]:
+          - listitem [ref=e151]: Node.js 18.0 或更高版本
+          - listitem [ref=e152]: npm 或 yarn 包管理器
+          - listitem [ref=e153]: Windows 用户需安装 Git for Windows
+          - listitem [ref=e154]: 4GB+ 可用内存
+          - listitem [ref=e155]: 稳定的网络连接
+        - heading "#安装步骤" [level=2] [ref=e156]
+        - generic [ref=e157]:
+          - generic [ref=e158]: 🚀 一键配置（推荐）
+          - paragraph [ref=e159]: 嫌手动配置麻烦？先安装好 Node.js、Git 和 Claude Code CLI（见下方步骤 1、2），然后运行以下命令即可一键完成配置：
+          - code [ref=e161]: npx xingkong-ai
+        - heading "1. 安装 Node.js" [level=3] [ref=e162]
+        - paragraph [ref=e163]: 如果尚未安装 Node.js，推荐使用 nvm 进行版本管理：
+        - code [ref=e165]: "# 安装 nvm curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash # 安装 Node.js LTS nvm install --lts nvm use --lts # 验证安装 node --version # 应显示 v18+ 或 v20+"
+        - generic [ref=e166]:
+          - generic [ref=e167]: ⚠ Windows 用户注意
+          - paragraph [ref=e168]:
+            - text: Windows 系统还需要额外安装
+            - link "Git for Windows" [ref=e169] [cursor=pointer]:
+              - /url: https://git-scm.com/downloads/win
+            - text: ，否则 Claude Code 可能无法正常运行。安装时保持默认选项即可。
+        - heading "2. 安装 Claude Code CLI（必须）" [level=3] [ref=e170]
+        - paragraph [ref=e171]: 这是后续所有配置的前提，必须先在本地安装好 Claude Code CLI 工具：
+        - code [ref=e173]: npm install -g @anthropic-ai/claude-code
+        - generic [ref=e174]:
+          - generic [ref=e175]: 验证安装
+          - paragraph [ref=e176]:
+            - text: 运行
+            - code [ref=e177]: claude --version
+            - text: 确认安装成功。
+        - heading "#API 配置（关键步骤）" [level=2] [ref=e178]
+        - heading "1. 获取令牌" [level=3] [ref=e179]
+        - paragraph [ref=e180]: 前往 星空·AI 控制台获取您的 API Key。注册即送免费额度。
+        - heading "2. 配置环境变量" [level=3] [ref=e181]
+        - paragraph [ref=e182]:
+          - text: 编辑配置文件
+          - code [ref=e183]: ~/.claude/settings.json
+          - text: ：
+        - code [ref=e185]: "{ \"env\": { \"ANTHROPIC_AUTH_TOKEN\": \"sk-your-api-key\", \"ANTHROPIC_BASE_URL\": \"https://www.yuesecoding.top\", \"CLAUDE_CODE_MAX_OUTPUT_TOKENS\": \"64000\", \"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC\": \"1\" }, \"permissions\": { \"allow\": [], \"deny\": [] }, \"alwaysThinkingEnabled\": false }"
+        - generic [ref=e186]:
+          - generic [ref=e187]: 提示
+          - paragraph [ref=e188]:
+            - text: 也可以通过环境变量配置：
+            - code [ref=e189]: export ANTHROPIC_BASE_URL="https://www.yuesecoding.top"
+            - text: 和
+            - code [ref=e190]: export ANTHROPIC_AUTH_TOKEN="sk-xxx"
+        - heading "3. 配置 .claude.json" [level=3] [ref=e191]
+        - paragraph [ref=e192]:
+          - text: 编辑或新增
+          - code [ref=e193]: ~/.claude.json
+          - text: 文件（Windows 为
+          - code [ref=e194]: 用户目录/.claude.json
+          - text: ），添加以下内容跳过首次引导流程：
+        - code [ref=e196]: "{ \"hasCompletedOnboarding\": true }"
+        - generic [ref=e197]:
+          - generic [ref=e198]: 为什么需要这一步？
+          - paragraph [ref=e199]: 配置此参数后，Claude Code 启动时会跳过官方的 onboarding 引导流程，直接进入使用状态，避免因网络限制导致卡在引导页面。
+        - heading "#基本使用方法" [level=2] [ref=e200]
+        - heading "1. 启动 Claude Code" [level=3] [ref=e201]
+        - code [ref=e203]: "# 在项目目录中启动 cd your-project claude"
+        - heading "2. 首次启动设置" [level=3] [ref=e204]
+        - paragraph [ref=e205]: 首次启动时，Claude Code 会自动扫描项目结构。你可以直接用自然语言描述需求：
+        - code [ref=e207]: "# 示例对话 > 帮我分析这个项目的架构 > 给 UserService 添加一个分页查询方法 > 修复 login 接口的参数校验问题 > 写一个单元测试覆盖 utils/format.ts"
+        - heading "3. 基础操作示例" [level=3] [ref=e208]
+        - code [ref=e210]: "# 让 Claude 解释代码 > 解释一下 src/auth/middleware.ts 的逻辑 # 让 Claude 重构代码 > 把这个 class 组件重构为 hooks # 让 Claude 生成代码 > 创建一个 REST API 的 CRUD 模板"
+        - heading "#常用命令参考" [level=2] [ref=e211]
+        - heading "交互模式常用命令" [level=3] [ref=e212]
+        - table [ref=e213]:
+          - rowgroup [ref=e214]:
+            - row "命令 说明" [ref=e215]:
+              - columnheader "命令" [ref=e216]
+              - columnheader "说明" [ref=e217]
+          - rowgroup [ref=e218]:
+            - row "/help 显示帮助信息和所有可用命令" [ref=e219]:
+              - cell "/help" [ref=e220]
+              - cell "显示帮助信息和所有可用命令" [ref=e221]
+            - row "/compact [instructions] 压缩上下文，释放 token 空间，可附加说明" [ref=e222]:
+              - cell "/compact [instructions]" [ref=e223]
+              - cell "压缩上下文，释放 token 空间，可附加说明" [ref=e224]
+            - row "/clear 清除当前对话历史" [ref=e225]:
+              - cell "/clear" [ref=e226]
+              - cell "清除当前对话历史" [ref=e227]
+            - row "/cost 查看当前会话的 token 消耗统计" [ref=e228]:
+              - cell "/cost" [ref=e229]
+              - cell "查看当前会话的 token 消耗统计" [ref=e230]
+            - row "/resume 恢复上一次的对话" [ref=e231]:
+              - cell "/resume" [ref=e232]
+              - cell "恢复上一次的对话" [ref=e233]
+            - row "/vim 切换 Vim 编辑模式" [ref=e234]:
+              - cell "/vim" [ref=e235]
+              - cell "切换 Vim 编辑模式" [ref=e236]
+            - row "/model 切换使用的模型（推荐 Sonnet 模型）" [ref=e237]:
+              - cell "/model" [ref=e238]
+              - cell "切换使用的模型（推荐 Sonnet 模型）" [ref=e239]
+            - row "/mcp 管理 MCP 服务器连接" [ref=e240]:
+              - cell "/mcp" [ref=e241]
+              - cell "管理 MCP 服务器连接" [ref=e242]
+        - heading "压缩上下文" [level=3] [ref=e243]
+        - paragraph [ref=e244]:
+          - text: 当对话过长导致 token 接近上限时，使用
+          - code [ref=e245]: /compact
+          - text: 命令压缩上下文：
+        - code [ref=e247]: "/compact [instructions] # 可以添加说明，告诉 Claude 保留哪些重要信息"
+        - heading "恢复以前的对话" [level=3] [ref=e248]
+        - paragraph [ref=e249]:
+          - text: 使用
+          - code [ref=e250]: /resume
+          - text: 或在启动时加
+          - code [ref=e251]: "--resume"
+          - text: 参数恢复之前的对话：
+        - code [ref=e253]: "claude --resume # 启动时恢复上次对话 claude --resume <id> # 恢复指定 ID 的对话"
+        - heading "处理图像信息" [level=3] [ref=e254]
+        - paragraph [ref=e255]: Claude Code 支持在对话中传入图片进行分析，可以直接拖拽图片到终端或使用路径引用。
+        - heading "#MCP (上下文通用协议)" [level=2] [ref=e256]
+        - paragraph [ref=e257]:
+          - text: MCP（Model Context Protocol）允许 Claude Code 连接外部工具和服务。只在项目根目录创建
+          - code [ref=e258]: .mcp.json
+          - text: 文件即可配置。
+        - generic [ref=e259]:
+          - generic [ref=e260]: MCP 的最佳实践
+          - paragraph [ref=e261]:
+            - text: 将 MCP 配置放在项目根目录的
+            - code [ref=e262]: .mcp.json
+            - text: 中，团队成员可以共享相同的工具配置。
+        - heading "MCP 配置示例" [level=3] [ref=e263]
+        - code [ref=e265]: "{ \"mcpServers\": { \"filesystem\": { \"command\": \"npx\", \"args\": [\"-y\", \"@modelcontextprotocol/server-filesystem\", \"/path/to/project\"] }, \"github\": { \"command\": \"npx\", \"args\": [\"-y\", \"@modelcontextprotocol/server-github\"], \"env\": { \"GITHUB_PERSONAL_ACCESS_TOKEN\": \"your-token\" } } } }"
+        - heading "#高级技巧" [level=2] [ref=e266]
+        - heading "项目记忆文件 (CLAUDE.md)" [level=3] [ref=e267]
+        - paragraph [ref=e268]:
+          - text: 在项目根目录创建
+          - code [ref=e269]: CLAUDE.md
+          - text: 文件，Claude 会在每次启动时自动读取，用于了解项目上下文：
+        - code [ref=e271]: "# 项目架构 - 前端：React + TypeScript + Tailwind - 后端：Node.js + Express + Prisma - 数据库：PostgreSQL # 编码标准 - 使用 ESLint + Prettier - 组件使用函数式写法 + Hooks - API 响应统一使用 { code, data, message } 格式 # 注意事项 - 不要修改 migrations 目录下的文件 - 环境变量在 .env.example 中有模板"
+        - heading "IDE 集成" [level=3] [ref=e272]
+        - paragraph [ref=e273]: Claude Code 可以与主流 IDE 配合使用：
+        - list [ref=e274]:
+          - listitem [ref=e275]:
+            - strong [ref=e276]: VS Code
+            - text: ：在内置终端中直接运行
+            - code [ref=e277]: claude
+          - listitem [ref=e278]:
+            - strong [ref=e279]: Cursor
+            - text: ：可同时使用 Cursor AI 和 Claude Code
+          - listitem [ref=e280]:
+            - strong [ref=e281]: JetBrains
+            - text: ：在 Terminal 面板中启动
+        - heading "VS Code 插件：Claude Code for VS Code" [level=3] [ref=e282]
+        - paragraph [ref=e283]:
+          - text: 除了在终端中使用，你还可以在 VS Code 中安装官方的
+          - strong [ref=e284]: Claude Code for VS Code
+          - text: 插件，获得图形化的交互体验。
+        - generic [ref=e285]:
+          - generic [ref=e286]: 💡 前提条件
+          - paragraph [ref=e287]:
+            - text: 使用此插件前，必须先按照上方步骤在本地安装并配置好 Claude Code CLI（即完成
+            - code [ref=e288]: npm install -g @anthropic-ai/claude-code
+            - text: + 配置
+            - code [ref=e289]: settings.json
+            - text: 和
+            - code [ref=e290]: .claude.json
+            - text: ）。插件会自动读取 CLI 的配置，无需在插件中重复配置 API Key。
+        - paragraph [ref=e291]:
+          - strong [ref=e292]: 安装方式：
+          - text: 在 VS Code 扩展商店搜索
+          - code [ref=e293]: Claude Code
+          - text: （发布者为 Anthropic），点击安装即可。
+        - paragraph [ref=e294]:
+          - strong [ref=e295]: 使用说明：
+        - list [ref=e296]:
+          - listitem [ref=e297]: 安装后插件会自动检测本地的 Claude Code CLI 及其配置
+          - listitem [ref=e298]: 如果 CLI 已正确配置好 API Key 和 Base URL，插件会直接可用，不会弹出登录页面
+          - listitem [ref=e299]: 如果插件提示需要登录，说明本地 CLI 尚未安装或配置不完整，请先完成上方的安装配置步骤
+        - heading "#使用心得 & 常见问题" [level=2] [ref=e300]
+        - generic [ref=e301]:
+          - generic [ref=e302]: 最佳实践
+          - paragraph [ref=e303]:
+            - text: 1. 先让 Claude 分析项目结构，再提具体需求
+            - text: 2. 复杂任务拆分为小步骤，逐步完成
+            - text: 3. 善用 CLAUDE.md 提供项目上下文
+            - text: 4. 定期使用 /compact 压缩上下文，避免 token 溢出
+            - text: 5. 对生成的代码进行 review，不要盲目接受
+        - heading "常见问题" [level=3] [ref=e304]
+        - paragraph [ref=e305]:
+          - strong [ref=e306]: "Q: 连接超时怎么办？"
+        - paragraph [ref=e307]:
+          - text: 检查
+          - code [ref=e308]: ~/.claude/settings.json
+          - text: 中的 API 地址和 Key 是否正确。如果使用环境变量，确认
+          - code [ref=e309]: ANTHROPIC_BASE_URL
+          - text: 和
+          - code [ref=e310]: ANTHROPIC_AUTH_TOKEN
+          - text: 已正确设置。
+        - paragraph [ref=e311]:
+          - strong [ref=e312]: "Q: 如何切换模型？"
+        - paragraph [ref=e313]:
+          - text: 在对话中输入
+          - code [ref=e314]: /model
+          - text: 即可查看和切换可用模型。
+        - paragraph [ref=e315]:
+          - strong [ref=e316]: "Q: token 用完了怎么办？"
+        - paragraph [ref=e317]:
+          - text: 使用
+          - code [ref=e318]: /compact
+          - text: 压缩上下文，或
+          - code [ref=e319]: /clear
+          - text: 清除对话重新开始。
+        - heading "#参考链接" [level=2] [ref=e320]
+        - list [ref=e321]:
+          - listitem [ref=e322]:
+            - link "Claude Code 官方文档" [ref=e323] [cursor=pointer]:
+              - /url: https://docs.anthropic.com/en/docs/claude-code/overview
+          - listitem [ref=e324]:
+            - link "Claude Code GitHub 仓库" [ref=e325] [cursor=pointer]:
+              - /url: https://github.com/anthropics/claude-code
+      - text: "# # # # # # # # # # # # # # # # # # # # # # # # #"
+  - contentinfo [ref=e326]:
+    - paragraph [ref=e327]: 星空·AI - AI 编程助手教程文档

@@ -1,0 +1,25 @@
+- generic [ref=e25]:
+  - generic [ref=e27]:
+    - generic [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: 🚀
+      - text: 飞书代码编辑器
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: A
+        - generic [ref=e33]: aiuser1778466812996
+      - button "登出" [ref=e34] [cursor=pointer]
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - heading "我的代码片段" [level=1] [ref=e37]
+      - generic [ref=e38]:
+        - button "AI 生成" [ref=e39] [cursor=pointer]
+        - link "✨ 创建新项目" [ref=e40] [cursor=pointer]:
+          - /url: /editor
+    - generic [ref=e41]:
+      - generic [ref=e42]: 📝
+      - heading "还没有代码片段" [level=3] [ref=e43]
+      - paragraph [ref=e44]: 创建你的第一个代码片段，开始编程之旅吧！
+      - generic [ref=e45]:
+        - button "AI 生成项目" [ref=e46] [cursor=pointer]
+        - link "创建第一个项目" [ref=e47] [cursor=pointer]:
+          - /url: /editor

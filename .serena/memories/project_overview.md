@@ -1,0 +1,1 @@
+该项目是一个类似 CodePen 的在线代码编辑器，分为前端 FeiShu-Codepen-Frontend 与后端 FeiShu-Codepen-Backend。前端使用 React 18 + TypeScript + Vite + CodeMirror 6 + Emotion；后端使用 Node.js + Express + MongoDB + Mongoose。主要能力包括用户登录、Pen 创建/编辑/分享、代码编译预览、错误提示与性能打点。

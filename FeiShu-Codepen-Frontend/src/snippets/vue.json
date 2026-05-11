@@ -1,0 +1,187 @@
+{
+  "importCreateApp": {
+    "prefix": "import createApp",
+    "body": "const { createApp } = Vue",
+    "description": "Import createApp from Vue"
+  },
+  "createApp": {
+    "prefix": "createApp",
+    "body": "const app = createApp({\n\t${1}\n})",
+    "description": "Create Vue app"
+  },
+  "appMount": {
+    "prefix": "app mount",
+    "body": "app.mount('${1:#app}')",
+    "description": "Mount Vue app"
+  },
+  "importRef": {
+    "prefix": "import ref",
+    "body": "const { ref } = Vue",
+    "description": "Import ref from Vue"
+  },
+  "importReactive": {
+    "prefix": "import reactive",
+    "body": "const { reactive } = Vue",
+    "description": "Import reactive from Vue"
+  },
+  "importComputed": {
+    "prefix": "import computed",
+    "body": "const { computed } = Vue",
+    "description": "Import computed from Vue"
+  },
+  "importWatch": {
+    "prefix": "import watch",
+    "body": "const { watch } = Vue",
+    "description": "Import watch from Vue"
+  },
+  "importOnMounted": {
+    "prefix": "import onMounted",
+    "body": "const { onMounted } = Vue",
+    "description": "Import onMounted from Vue"
+  },
+  "importOnUnmounted": {
+    "prefix": "import onUnmounted",
+    "body": "const { onUnmounted } = Vue",
+    "description": "Import onUnmounted from Vue"
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": "const ${1:count} = ref(${2:0})",
+    "description": "Vue ref"
+  },
+  "reactive": {
+    "prefix": "reactive",
+    "body": "const ${1:state} = reactive({\n\t${2:property}: ${3:value}\n})",
+    "description": "Vue reactive"
+  },
+  "computed": {
+    "prefix": "computed",
+    "body": "const ${1:computedValue} = computed(() => {\n\t${2}\n})",
+    "description": "Vue computed"
+  },
+  "onMounted": {
+    "prefix": "onMounted",
+    "body": "onMounted(() => {\n\t${1}\n})",
+    "description": "Vue onMounted lifecycle"
+  },
+  "onUnmounted": {
+    "prefix": "onUnmounted",
+    "body": "onUnmounted(() => {\n\t${1}\n})",
+    "description": "Vue onUnmounted lifecycle"
+  },
+  "onUpdated": {
+    "prefix": "onUpdated",
+    "body": "onUpdated(() => {\n\t${1}\n})",
+    "description": "Vue onUpdated lifecycle"
+  },
+  "onBeforeMount": {
+    "prefix": "onBeforeMount",
+    "body": "onBeforeMount(() => {\n\t${1}\n})",
+    "description": "Vue onBeforeMount lifecycle"
+  },
+  "onBeforeUnmount": {
+    "prefix": "onBeforeUnmount",
+    "body": "onBeforeUnmount(() => {\n\t${1}\n})",
+    "description": "Vue onBeforeUnmount lifecycle"
+  },
+  "watch": {
+    "prefix": "watch",
+    "body": "watch(${1:source}, (${2:newValue}, ${3:oldValue}) => {\n\t${4}\n})",
+    "description": "Vue watch"
+  },
+  "watchEffect": {
+    "prefix": "watchEffect",
+    "body": "watchEffect(() => {\n\t${1}\n})",
+    "description": "Vue watchEffect"
+  },
+  "vueComponent": {
+    "prefix": "vue component",
+    "body": "const component = {\n\tsetup() {\n\t\t${1}\n\t\treturn {\n\t\t\t${2}\n\t\t}\n\t},\n\ttemplate: `${3}`\n}",
+    "description": "Vue component object"
+  },
+  "vueComponentSimple": {
+    "prefix": "vue component simple",
+    "body": "const component = {\n\tsetup() {\n\t\t${1}\n\t},\n\ttemplate: `${2}`\n}",
+    "description": "Simple Vue component"
+  },
+  "templateExpression": {
+    "prefix": "template expression",
+    "body": "{{ ${1:expression} }}",
+    "description": "Vue template expression"
+  },
+  "vIf": {
+    "prefix": "v-if",
+    "body": "v-if=\"${1:condition}\"",
+    "description": "Vue v-if directive"
+  },
+  "vShow": {
+    "prefix": "v-show",
+    "body": "v-show=\"${1:condition}\"",
+    "description": "Vue v-show directive"
+  },
+  "vFor": {
+    "prefix": "v-for",
+    "body": "v-for=\"${1:item} in ${2:items}\"",
+    "description": "Vue v-for directive"
+  },
+  "vForWithIndex": {
+    "prefix": "v-for with index",
+    "body": "v-for=\"(${1:item}, ${2:index}) in ${3:items}\"",
+    "description": "Vue v-for with index"
+  },
+  "vBind": {
+    "prefix": "v-bind",
+    "body": "v-bind:${1:prop}=\"${2:value}\"",
+    "description": "Vue v-bind directive"
+  },
+  "vBindShorthand": {
+    "prefix": "v-bind shorthand",
+    "body": ":${1:prop}=\"${2:value}\"",
+    "description": "Vue v-bind shorthand"
+  },
+  "vOn": {
+    "prefix": "v-on",
+    "body": "v-on:${1:click}=\"${2:handler}\"",
+    "description": "Vue v-on directive"
+  },
+  "vOnShorthand": {
+    "prefix": "v-on shorthand",
+    "body": "@${1:click}=\"${2:handler}\"",
+    "description": "Vue v-on shorthand"
+  },
+  "vModel": {
+    "prefix": "v-model",
+    "body": "v-model=\"${1:value}\"",
+    "description": "Vue v-model directive"
+  },
+  "eventHandler": {
+    "prefix": "event handler",
+    "body": "const handle${1:Event} = () => {\n\t${2}\n}",
+    "description": "Event handler"
+  },
+  "eventHandlerWithEvent": {
+    "prefix": "event handler with event",
+    "body": "const handle${1:Event} = (${2:event}) => {\n\t${3}\n}",
+    "description": "Event handler with event parameter"
+  },
+  "method": {
+    "prefix": "method",
+    "body": "const ${1:methodName} = () => {\n\t${2}\n}",
+    "description": "Vue method"
+  },
+  "asyncMethod": {
+    "prefix": "async method",
+    "body": "const ${1:methodName} = async () => {\n\t${2}\n}",
+    "description": "Vue async method"
+  },
+  "updateRef": {
+    "prefix": "update ref",
+    "body": "${1:count}.value = ${2:newValue}",
+    "description": "Update ref value"
+  },
+  "updateReactive": {
+    "prefix": "update reactive",
+    "body": "${1:state}.${2:property} = ${3:newValue}",
+    "description": "Update reactive property"
+  }
+}

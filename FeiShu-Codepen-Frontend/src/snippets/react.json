@@ -1,0 +1,147 @@
+{
+  "reactFunctionComponent": {
+    "prefix": "react function component",
+    "body": "function ${1:ComponentName}(${2:props}) {\n\treturn (\n\t\t${3}\n\t);\n}",
+    "description": "React function component"
+  },
+  "reactArrowComponent": {
+    "prefix": "react arrow component",
+    "body": "const ${1:ComponentName} = (${2:props}) => {\n\treturn (\n\t\t${3}\n\t);\n}",
+    "description": "React arrow function component"
+  },
+  "reactClassComponent": {
+    "prefix": "react class component",
+    "body": "class ${1:ComponentName} extends React.Component {\n\trender() {\n\t\treturn (\n\t\t\t${2}\n\t\t);\n\t}\n}",
+    "description": "React class component"
+  },
+  "reactMemoComponent": {
+    "prefix": "react memo component",
+    "body": "const ${1:ComponentName} = React.memo((${2:props}) => {\n\treturn (\n\t\t${3}\n\t);\n});",
+    "description": "React memo component"
+  },
+  "useState": {
+    "prefix": "useState",
+    "body": "const [${1:state}, set${1:state}] = useState(${2:initialValue})",
+    "description": "React useState hook"
+  },
+  "useEffect": {
+    "prefix": "useEffect",
+    "body": "useEffect(() => {\n\t${1}\n}, [${2:dependencies}])",
+    "description": "React useEffect hook"
+  },
+  "useEffectEmptyDeps": {
+    "prefix": "useEffect empty deps",
+    "body": "useEffect(() => {\n\t${1}\n}, [])",
+    "description": "React useEffect with empty dependencies"
+  },
+  "useRef": {
+    "prefix": "useRef",
+    "body": "const ${1:ref} = useRef(${2:initialValue})",
+    "description": "React useRef hook"
+  },
+  "useCallback": {
+    "prefix": "useCallback",
+    "body": "const ${1:callback} = useCallback((${2:params}) => {\n\t${3}\n}, [${4:dependencies}])",
+    "description": "React useCallback hook"
+  },
+  "useMemo": {
+    "prefix": "useMemo",
+    "body": "const ${1:memoizedValue} = useMemo(() => {\n\t${2}\n}, [${3:dependencies}])",
+    "description": "React useMemo hook"
+  },
+  "useContext": {
+    "prefix": "useContext",
+    "body": "const ${1:context} = useContext(${2:Context})",
+    "description": "React useContext hook"
+  },
+  "useReducer": {
+    "prefix": "useReducer",
+    "body": "const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialState})",
+    "description": "React useReducer hook"
+  },
+  "jsxElement": {
+    "prefix": "jsx element",
+    "body": "<${1:div}>\n\t${2}\n</${1:div}>",
+    "description": "JSX element"
+  },
+  "jsxComponent": {
+    "prefix": "jsx component",
+    "body": "<${1:Component} ${2:props}>\n\t${3}\n</${1:Component}>",
+    "description": "JSX component"
+  },
+  "jsxClassName": {
+    "prefix": "jsx with className",
+    "body": "<${1:div} className=\"${2:className}\">\n\t${3}\n</${1:div}>",
+    "description": "JSX with className"
+  },
+  "jsxStyle": {
+    "prefix": "jsx with style",
+    "body": "<${1:div} style={{ ${2:styles} }}>\n\t${3}\n</${1:div}>",
+    "description": "JSX with inline style"
+  },
+  "jsxInput": {
+    "prefix": "jsx input",
+    "body": "<${1:input} type=\"${2:text}\" value={${3:value}} onChange={${4:handleChange}} />",
+    "description": "JSX input element"
+  },
+  "jsxButton": {
+    "prefix": "jsx button",
+    "body": "<${1:button} onClick={${2:handleClick}}>\n\t${3}\n</${1:button}>",
+    "description": "JSX button"
+  },
+  "conditionalRender": {
+    "prefix": "conditional render",
+    "body": "{${1:condition} && (\n\t${2}\n)}",
+    "description": "Conditional rendering"
+  },
+  "ternaryRender": {
+    "prefix": "ternary render",
+    "body": "{${1:condition} ? (\n\t${2}\n) : (\n\t${3}\n)}",
+    "description": "Ternary conditional rendering"
+  },
+  "mapRender": {
+    "prefix": "map render",
+    "body": "{${1:items}.map((${2:item}, ${3:index}) => (\n\t<${4:div} key={${3:index}}>\n\t\t${5}\n\t</${4:div}>\n))}",
+    "description": "Map list to JSX"
+  },
+  "eventHandler": {
+    "prefix": "event handler",
+    "body": "const handle${1:Event} = (${2:event}) => {\n\t${3}\n}",
+    "description": "Event handler"
+  },
+  "eventHandlerCallback": {
+    "prefix": "event handler with callback",
+    "body": "const handle${1:Event} = useCallback((${2:event}) => {\n\t${3}\n}, [${4:dependencies}])",
+    "description": "Event handler with useCallback"
+  },
+  "importReact": {
+    "prefix": "import React",
+    "body": "import React from 'react'",
+    "description": "Import React"
+  },
+  "importReactHook": {
+    "prefix": "import React with hook",
+    "body": "import React, { ${1:useState} } from 'react'",
+    "description": "Import React with hook"
+  },
+  "exportDefaultComponent": {
+    "prefix": "export default component",
+    "body": "export default ${1:ComponentName}",
+    "description": "Export default component"
+  },
+  "destructuredProps": {
+    "prefix": "destructured props",
+    "body": "const ${1:ComponentName} = ({ ${2:props} }) => {\n\t${3}\n}",
+    "description": "Destructured props component"
+  },
+  "destructureProps": {
+    "prefix": "destructure props",
+    "body": "const { ${1:prop1}, ${2:prop2} } = ${3:props}",
+    "description": "Destructure props object"
+  },
+  "destructureState": {
+    "prefix": "destructure state",
+    "body": "const { ${1:state1}, ${2:state2} } = ${3:state}",
+    "description": "Destructure state object"
+  }
+}

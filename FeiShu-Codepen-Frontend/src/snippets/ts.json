@@ -1,0 +1,197 @@
+{
+  "typeAlias": {
+    "prefix": "type alias",
+    "body": "type ${1:TypeName} = ${2:string}",
+    "description": "TypeScript type alias"
+  },
+  "interface": {
+    "prefix": "interface",
+    "body": "interface ${1:InterfaceName} {\n\t${2:property}: ${3:string}\n}",
+    "description": "TypeScript interface"
+  },
+  "interfaceExtends": {
+    "prefix": "interface extends",
+    "body": "interface ${1:InterfaceName} extends ${2:BaseInterface} {\n\t${3:property}: ${4:string}\n}",
+    "description": "Interface with extends"
+  },
+  "enum": {
+    "prefix": "enum",
+    "body": "enum ${1:EnumName} {\n\t${2:VALUE} = ${3:value}\n}",
+    "description": "TypeScript enum"
+  },
+  "constEnum": {
+    "prefix": "const enum",
+    "body": "const enum ${1:EnumName} {\n\t${2:VALUE} = ${3:value}\n}",
+    "description": "TypeScript const enum"
+  },
+  "genericFunction": {
+    "prefix": "generic function",
+    "body": "function ${1:functionName}<${2:T}>(param: ${2:T}): ${2:T} {\n\t${3}\n}",
+    "description": "Generic function"
+  },
+  "genericClass": {
+    "prefix": "generic class",
+    "body": "class ${1:ClassName}<${2:T}> {\n\tprivate value: ${2:T};\n\tconstructor(value: ${2:T}) {\n\t\tthis.value = value;\n\t}\n}",
+    "description": "Generic class"
+  },
+  "genericInterface": {
+    "prefix": "generic interface",
+    "body": "interface ${1:InterfaceName}<${2:T}> {\n\tvalue: ${2:T};\n}",
+    "description": "Generic interface"
+  },
+  "typeAssertion": {
+    "prefix": "type assertion",
+    "body": "const ${1:value} = ${2:expression} as ${3:string}",
+    "description": "Type assertion with as"
+  },
+  "typeAssertionAngle": {
+    "prefix": "type assertion angle",
+    "body": "const ${1:value} = <${2:string}>${3:expression}",
+    "description": "Type assertion with angle brackets"
+  },
+  "typeofGuard": {
+    "prefix": "typeof guard",
+    "body": "if (typeof ${1:value} === '${2:string}') {\n\t${3}\n}",
+    "description": "Typeof type guard"
+  },
+  "instanceofGuard": {
+    "prefix": "instanceof guard",
+    "body": "if (${1:value} instanceof ${2:Constructor}) {\n\t${3}\n}",
+    "description": "Instanceof type guard"
+  },
+  "typeGuardFunction": {
+    "prefix": "type guard function",
+    "body": "function is${1:Type}(${2:value}: any): ${2:value} is ${1:Type} {\n\t${3}\n}",
+    "description": "User-defined type guard"
+  },
+  "functionTypeAnnotation": {
+    "prefix": "function type annotation",
+    "body": "const ${1:functionName}: (${2:param}: ${3:string}) => ${4:string} = (${2:param}) => {\n\t${5}\n}",
+    "description": "Function with type annotation"
+  },
+  "functionType": {
+    "prefix": "function type",
+    "body": "type ${1:FunctionType} = (${2:param}: ${3:string}) => ${4:string}",
+    "description": "Function type alias"
+  },
+  "methodInInterface": {
+    "prefix": "method in interface",
+    "body": "interface ${1:InterfaceName} {\n\t${2:method}: (${3:param}: ${4:string}) => ${5:string};\n}",
+    "description": "Method signature in interface"
+  },
+  "unionType": {
+    "prefix": "union type",
+    "body": "type ${1:UnionType} = ${2:string} | ${3:number}",
+    "description": "Union type"
+  },
+  "intersectionType": {
+    "prefix": "intersection type",
+    "body": "type ${1:IntersectionType} = ${2:Type1} & ${3:Type2}",
+    "description": "Intersection type"
+  },
+  "optionalProperties": {
+    "prefix": "optional properties",
+    "body": "type ${1:OptionalType} = {\n\t${2:required}: ${3:string};\n\t${4:optional}?: ${5:string};\n}",
+    "description": "Optional properties type"
+  },
+  "mappedType": {
+    "prefix": "mapped type",
+    "body": "type ${1:MappedType}<${2:T}> = {\n\t[K in keyof ${2:T}]: ${2:T}[K];\n}",
+    "description": "Mapped type"
+  },
+  "partialType": {
+    "prefix": "partial type",
+    "body": "type ${1:PartialType}<${2:T}> = Partial<${2:T}>",
+    "description": "Partial utility type"
+  },
+  "requiredType": {
+    "prefix": "required type",
+    "body": "type ${1:RequiredType}<${2:T}> = Required<${2:T}>",
+    "description": "Required utility type"
+  },
+  "pickType": {
+    "prefix": "pick type",
+    "body": "type ${1:PickType}<${2:T}, ${3:K}> = Pick<${2:T}, ${3:K}>",
+    "description": "Pick utility type"
+  },
+  "omitType": {
+    "prefix": "omit type",
+    "body": "type ${1:OmitType}<${2:T}, ${3:K}> = Omit<${2:T}, ${3:K}>",
+    "description": "Omit utility type"
+  },
+  "conditionalType": {
+    "prefix": "conditional type",
+    "body": "type ${1:ConditionalType}<${2:T}> = ${2:T} extends ${3:string} ? ${4:true} : ${5:false}",
+    "description": "Conditional type"
+  },
+  "inferType": {
+    "prefix": "infer type",
+    "body": "type ${1:InferType}<${2:T}> = ${2:T} extends infer ${3:U} ? ${3:U} : never",
+    "description": "Infer in conditional type"
+  },
+  "nullableType": {
+    "prefix": "nullable type",
+    "body": "type ${1:NullableType} = ${2:string} | null | undefined",
+    "description": "Nullable type"
+  },
+  "readonlyType": {
+    "prefix": "readonly type",
+    "body": "type ${1:ReadonlyType}<${2:T}> = Readonly<${2:T}>",
+    "description": "Readonly utility type"
+  },
+  "recordType": {
+    "prefix": "record type",
+    "body": "type ${1:RecordType} = Record<${2:string}, ${3:any}>",
+    "description": "Record utility type"
+  },
+  "declareModule": {
+    "prefix": "declare module",
+    "body": "declare module '${1:module-name}' {\n\t${2}\n}",
+    "description": "Module declaration"
+  },
+  "declareGlobal": {
+    "prefix": "declare global",
+    "body": "declare global {\n\t${1}\n}",
+    "description": "Global declaration"
+  },
+  "declareNamespace": {
+    "prefix": "declare namespace",
+    "body": "declare namespace ${1:Namespace} {\n\t${2}\n}",
+    "description": "Namespace declaration"
+  },
+  "decoratorClass": {
+    "prefix": "decorator class",
+    "body": "@${1:decorator}(${2:options})\n${3:class} ${4:ClassName} {\n\t${5}\n}",
+    "description": "Class decorator"
+  },
+  "decoratorMethod": {
+    "prefix": "decorator method",
+    "body": "@${1:decorator}(${2:options})\n${3:method} ${4:methodName}() {\n\t${5}\n}",
+    "description": "Method decorator"
+  },
+  "asyncFunctionType": {
+    "prefix": "async function type",
+    "body": "const ${1:asyncFunction}: () => Promise<${2:string}> = async () => {\n\t${3}\n}",
+    "description": "Async function with return type"
+  },
+  "promiseType": {
+    "prefix": "promise type",
+    "body": "type ${1:AsyncType} = Promise<${2:string}>",
+    "description": "Promise type alias"
+  },
+  "typedVariable": {
+    "prefix": "typed variable",
+    "body": "const ${1:variable}: ${2:string} = ${3:value}",
+    "description": "Typed variable declaration"
+  },
+  "typedFunction": {
+    "prefix": "typed function",
+    "body": "function ${1:functionName}(${2:param}: ${3:string}): ${4:string} {\n\t${5}\n}",
+    "description": "Typed function declaration"
+  },
+  "typedClass": {
+    "prefix": "typed class",
+    "body": "class ${1:ClassName} {\n\tprivate ${2:property}: ${3:string};\n\tconstructor(${2:property}: ${3:string}) {\n\t\tthis.${2:property} = ${2:property};\n\t}\n}",
+    "description": "Typed class with constructor"
+  }
+}

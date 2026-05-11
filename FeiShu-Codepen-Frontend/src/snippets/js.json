@@ -1,0 +1,232 @@
+{
+  "function": {
+    "prefix": "function",
+    "body": "function ${1:functionName}(${2:params}) {\n\t${3}\n}",
+    "description": "Function declaration"
+  },
+  "arrowFunction": {
+    "prefix": "arrow function",
+    "body": "const ${1:functionName} = (${2:params}) => {\n\t${3}\n}",
+    "description": "Arrow function"
+  },
+  "generatorFunction": {
+    "prefix": "generator function",
+    "body": "function* ${1:generatorName}(${2:params}) {\n\t${3}\n}",
+    "description": "Generator function"
+  },
+  "asyncFunction": {
+    "prefix": "async function",
+    "body": "async function ${1:functionName}(${2:params}) {\n\t${3}\n}",
+    "description": "Async function"
+  },
+  "asyncArrowFunction": {
+    "prefix": "async arrow function",
+    "body": "const ${1:functionName} = async (${2:params}) => {\n\t${3}\n}",
+    "description": "Async arrow function"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "if (${1:condition}) {\n\t${2}\n}",
+    "description": "If statement"
+  },
+  "ifElse": {
+    "prefix": "if else",
+    "body": "if (${1:condition}) {\n\t${2}\n} else {\n\t${3}\n}",
+    "description": "If else statement"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": "switch (${1:expression}) {\n\tcase ${2:value}:\n\t\t${3}\n\t\tbreak;\n\tdefault:\n\t\t${4}\n}",
+    "description": "Switch statement"
+  },
+  "forLoop": {
+    "prefix": "for loop",
+    "body": "for (let ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {\n\t${3}\n}",
+    "description": "For loop"
+  },
+  "forOf": {
+    "prefix": "for of",
+    "body": "for (const ${1:item} of ${2:array}) {\n\t${3}\n}",
+    "description": "For...of loop"
+  },
+  "forIn": {
+    "prefix": "for in",
+    "body": "for (const ${1:key} in ${2:object}) {\n\t${3}\n}",
+    "description": "For...in loop"
+  },
+  "while": {
+    "prefix": "while",
+    "body": "while (${1:condition}) {\n\t${2}\n}",
+    "description": "While loop"
+  },
+  "doWhile": {
+    "prefix": "do while",
+    "body": "do {\n\t${1}\n} while (${2:condition});",
+    "description": "Do...while loop"
+  },
+  "class": {
+    "prefix": "class",
+    "body": "class ${1:ClassName} {\n\tconstructor(${2:params}) {\n\t\t${3}\n\t}\n}",
+    "description": "Class declaration"
+  },
+  "classExtends": {
+    "prefix": "class extends",
+    "body": "class ${1:ClassName} extends ${2:ParentClass} {\n\tconstructor(${3:params}) {\n\t\tsuper(${4});\n\t\t${5}\n\t}\n}",
+    "description": "Class with extends"
+  },
+  "object": {
+    "prefix": "object",
+    "body": "const ${1:objectName} = {\n\t${2:property}: ${3:value}\n}",
+    "description": "Object literal"
+  },
+  "tryCatch": {
+    "prefix": "try catch",
+    "body": "try {\n\t${1}\n} catch (${2:error}) {\n\t${3}\n}",
+    "description": "Try catch block"
+  },
+  "tryCatchFinally": {
+    "prefix": "try catch finally",
+    "body": "try {\n\t${1}\n} catch (${2:error}) {\n\t${3}\n} finally {\n\t${4}\n}",
+    "description": "Try catch finally block"
+  },
+  "promiseResolve": {
+    "prefix": "Promise.resolve",
+    "body": "Promise.resolve(${1:value})",
+    "description": "Promise.resolve"
+  },
+  "promiseReject": {
+    "prefix": "Promise.reject",
+    "body": "Promise.reject(${1:error})",
+    "description": "Promise.reject"
+  },
+  "promise": {
+    "prefix": "Promise",
+    "body": "new Promise((resolve, reject) => {\n\t${1}\n})",
+    "description": "New Promise"
+  },
+  "await": {
+    "prefix": "await",
+    "body": "await ${1:promise}",
+    "description": "Await expression"
+  },
+  "arrayMap": {
+    "prefix": "array map",
+    "body": "${1:array}.map((${2:item}) => ${3})",
+    "description": "Array map"
+  },
+  "arrayFilter": {
+    "prefix": "array filter",
+    "body": "${1:array}.filter((${2:item}) => ${3})",
+    "description": "Array filter"
+  },
+  "arrayReduce": {
+    "prefix": "array reduce",
+    "body": "${1:array}.reduce((${2:acc}, ${3:item}) => ${4}, ${5:initialValue})",
+    "description": "Array reduce"
+  },
+  "arrayForEach": {
+    "prefix": "array forEach",
+    "body": "${1:array}.forEach((${2:item}) => ${3})",
+    "description": "Array forEach"
+  },
+  "objectKeys": {
+    "prefix": "Object.keys",
+    "body": "Object.keys(${1:object})",
+    "description": "Object.keys"
+  },
+  "objectValues": {
+    "prefix": "Object.values",
+    "body": "Object.values(${1:object})",
+    "description": "Object.values"
+  },
+  "objectEntries": {
+    "prefix": "Object.entries",
+    "body": "Object.entries(${1:object})",
+    "description": "Object.entries"
+  },
+  "consoleLog": {
+    "prefix": "console.log",
+    "body": "console.log(${1:message})",
+    "description": "Console log"
+  },
+  "consoleError": {
+    "prefix": "console.error",
+    "body": "console.error(${1:message})",
+    "description": "Console error"
+  },
+  "consoleWarn": {
+    "prefix": "console.warn",
+    "body": "console.warn(${1:message})",
+    "description": "Console warn"
+  },
+  "consoleTable": {
+    "prefix": "console.table",
+    "body": "console.table(${1:data})",
+    "description": "Console table"
+  },
+  "return": {
+    "prefix": "return",
+    "body": "return ${1:value}",
+    "description": "Return statement"
+  },
+  "throwError": {
+    "prefix": "throw error",
+    "body": "throw new Error(${1:message})",
+    "description": "Throw error"
+  },
+  "const": {
+    "prefix": "const",
+    "body": "const ${1:variableName} = ${2:value}",
+    "description": "Const declaration"
+  },
+  "let": {
+    "prefix": "let",
+    "body": "let ${1:variableName} = ${2:value}",
+    "description": "Let declaration"
+  },
+  "var": {
+    "prefix": "var",
+    "body": "var ${1:variableName} = ${2:value}",
+    "description": "Var declaration"
+  },
+  "importDefault": {
+    "prefix": "import",
+    "body": "import ${1:module} from '${2:path}'",
+    "description": "Import default"
+  },
+  "importNamed": {
+    "prefix": "import named",
+    "body": "import { ${1:export} } from '${2:path}'",
+    "description": "Import named"
+  },
+  "importAll": {
+    "prefix": "import all",
+    "body": "import * as ${1:alias} from '${2:path}'",
+    "description": "Import all"
+  },
+  "exportDefault": {
+    "prefix": "export default",
+    "body": "export default ${1:value}",
+    "description": "Export default"
+  },
+  "exportNamed": {
+    "prefix": "export named",
+    "body": "export { ${1:export} }",
+    "description": "Export named"
+  },
+  "exportConst": {
+    "prefix": "export const",
+    "body": "export const ${1:name} = ${2:value}",
+    "description": "Export const"
+  },
+  "templateLiteral": {
+    "prefix": "template literal",
+    "body": "`${1:content}`",
+    "description": "Template literal"
+  },
+  "templateExpression": {
+    "prefix": "template with expression",
+    "body": "`${1:content} ${2:${expression}}`",
+    "description": "Template literal with expression"
+  }
+}
